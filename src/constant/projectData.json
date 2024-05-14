@@ -1,0 +1,44 @@
+{
+    "projects": [
+        {
+            "heading":"Elevating Aesthetics with Precision and Innovation",
+            "name": "Industrial Interior Design",
+            "UrlName": "IndustrialInteriorDesign",
+            "img": "/images/industrial.png",
+            "description": "Our Design Elevation service focuses on creating distinctive and sophisticated exterior elevations that blend seamlessly with the surrounding environment while reflecting our clients' unique visions. By emphasizing architectural details, material selection, and proportional harmony, we ensure that each elevation not only meets but exceeds aesthetic and functional expectations.",
+            "images":[
+                "/images/Rectangle.png",
+                "/images/Rectangle 33 (3).png",
+                "/images/Rectangle 33 (4).png",
+                "/images/Rectangle 33 (5).png",
+                "/images/Rectangle 33 (6).png",
+                "/images/Rectangle 33 (7).png"
+            ]
+        },
+        {
+            "heading":"Elevating Aesthetics with Precision and Innovation",
+            "name": "Traditional Interior Design",
+            "UrlName": "Traditional-Interior-Design",
+            "img": "/images/traditional.png",
+            "description": "Our Design Elevation service focuses on creating distinctive and sophisticated exterior elevations that blend seamlessly with the surrounding environment while reflecting our clients' unique visions. By emphasizing architectural details, material selection, and proportional harmony, we ensure that each elevation not only meets but exceeds aesthetic and functional expectations.",
+            "images":[
+                "/images/Rectangle 33.png",
+                "/images/Rectangle 33 (1).png",
+                "/images/Rectangle 33 (2).png"
+            ]
+        },
+        {
+            "heading":"Elevating Aesthetics with Precision and Innovation",
+            "name": "Modern Interior Design",
+            "UrlName": "Modern-Interior-Design",
+            "img": "/images/modern.png",
+            "description": "Our Design Elevation service focuses on creating distinctive and sophisticated exterior elevations that blend seamlessly with the surrounding environment while reflecting our clients' unique visions. By emphasizing architectural details, material selection, and proportional harmony, we ensure that each elevation not only meets but exceeds aesthetic and functional expectations.",
+            "images":[
+                "/images/Steps frame.png",
+                "/images/Steps frame (1).png",
+                "/images/Steps frame (2).png"
+            ]
+        }
+        
+    ]
+}
