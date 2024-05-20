@@ -7,6 +7,8 @@ export default function architecturePlans() {
     const router = useRouter()
 
 
+    console.log(projectsData.projects);
+
     return (
 
         <div className="pt-5">

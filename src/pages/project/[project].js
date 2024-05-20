@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 import projectsData from '@/constant/projectData.json'
 import slugify from 'slugify';
+import PdfViewer from '@/components/common/PdfViewer';
 
 export default function ProjectDetail() {
-
+  const [file, setFile] = useState("/Muhammad Haris.pdf");
   const router = useRouter();
   const { project } = router.query;
 
@@ -23,6 +24,25 @@ export default function ProjectDetail() {
 
   }
 
+  const MediaDisplay = ({ imgPath, videoPath, pdfPath }) => {
+    if (imgPath) {
+      return <img src={imgPath} alt="Image" style={{ width: "100%" }} />;
+    } else if (videoPath) {
+      return (
+        <video controls>
+          <source src={videoPath} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      );
+    } else if (pdfPath) {
+      return (
+        <PdfViewer file={file} />
+      );
+    } else {
+      return <p>No media available</p>;
+    }
+  };
+
 
 
   return (
@@ -30,18 +50,25 @@ export default function ProjectDetail() {
       <div className="container py-5 text-center">
         <div className="row p-lg-5">
           <div className="col-12 p-5">
-            <h3 >{projectData.heading}</h3>
-            <p className="px-lg-5">{projectData.description}</p>
-            <div className="px-lg-5"> <img src={projectData.img} style={{ width: "100%" }} /></div>
+            <h3 >{projectData?.heading}</h3>
+            <p className="px-lg-5">{projectData?.description}</p>
+            <div className="px-lg-5">
+              <MediaDisplay
+                imgPath={projectData?.imgPath}
+                videoPath={projectData?.videoPath}
+                pdfPath={projectData?.pdfPath}
+              />
+              {/* <img src={projectData?.img} style={{ width: "100%" }} /> */}
+            </div>
           </div>
 
         </div>
       </div>
       <div className="container-fluid p-5" style={{ background: 'white' }}>
         <div className="container text-center">
-          <h3>{projectData.name}</h3>
+          <h3>{projectData?.name}</h3>
           <div className="row">
-            {projectData.images.map((img, index) => (
+            {projectData?.images.map((img, index) => (
               <div className="col-lg-4 col-md-12 p-4">
                 <img src={img} style={{ width: '100%' }} />
               </div>
